@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const url = "https://fakestoreapi.com/products";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
+
   useEffect(() => {
     async function getProducts() {
     const response = await fetch(url)
@@ -22,7 +24,9 @@ export default function Products() {
             <img src={product.image} alt={product.title} />
             <p>{product.description}</p>
             <p>{product.price}</p>
+            <Link to={`/Products/${product.id}`}>
             <button>Go to product detail</button>
+            </Link>
           </div>
         })}
       </div>

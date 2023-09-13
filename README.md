@@ -1,4 +1,4 @@
-# React Routers Assignments
+# React Routes Assignment
 
 ### How to run project
 
