@@ -5,8 +5,8 @@ export default function NavBar() {
   return (
     <div className="navBar">
       <Link to="/">Home</Link>
-      <Link to="/About">About</Link>
-      <Link to="/Products">Products</Link>
+      <Link to="/about">About</Link>
+      <Link to="/products">Products</Link>
     </div>
   );
 }

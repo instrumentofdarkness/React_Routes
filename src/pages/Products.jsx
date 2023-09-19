@@ -14,21 +14,25 @@ export default function Products() {
     }
     getProducts();
   }, [])
+  console.log(products, "product from ProductList")
   return (
     <div>
       <h1>Products</h1>
       <div className="products">
-        {products.map((product) => {
+
+        {products.map((product) => 
+          <>
           <div key={product.id}> 
             <h3>{product.title}</h3>
             <img src={product.image} alt={product.title} />
             <p>{product.description}</p>
             <p>{product.price}</p>
-            <Link to={`/Products/${product.id}`}>
+            <Link to={`/products/${product.id}`}>
             <button>Go to product detail</button>
             </Link>
           </div>
-        })}
+          </>
+        )}
       </div>
     </div>
   )

@@ -13,9 +13,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/About" element={<About />}></Route>
-        <Route path="/Products" element={<Products />}></Route>
-        <Route path="/Products/:id" element={<ProductDetail />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/products" element={<Products />}></Route>
+        <Route path="/products/:id" element={<ProductDetail />}></Route>
       </Routes>
     </div>
   );
